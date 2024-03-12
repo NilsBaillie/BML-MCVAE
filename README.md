@@ -2,13 +2,13 @@
 
 The code of this repository is based on the code made by the authors of the article "Monte Carlo Variational Auto-Encoders", it is available at : https://github.com/stat-ml/mcvae/
 
-The .py files in the 'models' folder have not been modified. We were not able to run the initial code so we did adjustements for the main.py and utils.py files.
+The .py files in the 'models' folder have not been modified. We were not able to run the initial code so we had to do slight adjustements in the main.py and utils.py files.
 
-It is important to use the 1.1 version of the pytorch-lightning package, other packages are also needed, they can be obtained by uncommenting the first lines of the notebooks. Also, you will need to comment the files 134 and 135 of the file located at : 
+It is important to use the 1.1 version of the pytorch-lightning package because of deprecated arguments. Other packages are also needed, they can be obtained by uncommenting the first lines of the notebooks. Also, you will need to comment the lines 134 and 135 of the file located at : 
 pytorch-lightning/trainer/optimizers.py
 
-The "Toy_experiment" notebook can be run directly on cpu, the 'PPCA' notebook however needs to train several models so it is advised to run it with a gpu on colab for instance.
-The run this notebook on colab you need to follow the steps : 
+The "Toy_experiment" notebook can be run directly on cpu, the 'PPCA' notebook however needs to train several models for a long time so it is advised to run it with a gpu on colab for instance.
+To run this notebook on colab you need to follow the steps : 
 
 1) Download every needed file to colab :
 main.py, utils.py and put the files : __init__,auxilary,encoders,decoders,vaes,samplers,models,normflows(.py) 
